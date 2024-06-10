@@ -40,6 +40,7 @@ module "eks" {
 
   cluster_name    = local.cluster_name
   cluster_version = "1.29"
+  iam_role_arn = "tfc-role"
 
   cluster_endpoint_public_access           = true
   enable_cluster_creator_admin_permissions = true
