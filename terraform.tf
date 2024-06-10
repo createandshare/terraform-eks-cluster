@@ -3,11 +3,12 @@
 
 terraform {
 
-  # cloud {
-  #   workspaces {
-  #     name = "learn-terraform-eks"
-  #   }
-  # }
+  cloud {
+    organization = "create-and-share"
+    workspaces {
+      name = "terraform-eks-cluster"
+    }
+  }
 
   required_providers {
     aws = {
